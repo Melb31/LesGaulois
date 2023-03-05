@@ -14,7 +14,7 @@ public class Romain {
 	}
 	
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "Â« " + texte + "Â»");
 		
 	}
 
@@ -32,5 +32,6 @@ public class Romain {
 		}
 		
 	}
+	
 	
 }
