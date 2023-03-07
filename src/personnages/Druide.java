@@ -40,7 +40,7 @@ public class Druide {
 
 	private String prendreParole() {
 		// TODO Auto-generated method stub
-		return "Le druide" + nom + " : ";
+		return "Le druide " + nom + " : ";
 	}
 	
 	public void preparerPotion() {
@@ -49,11 +49,11 @@ public class Druide {
 		forcePotion= random.nextInt(effetPotionMax+1-effetPotionMin)+effetPotionMin;
 		if (forcePotion > 7) {
 			System.out.println(prendreParole()+"« J'ai préparé\r\n"
-					+ "une super potion de force »" +forcePotion);
+					+ "une super potion de force "+forcePotion +".»");
 		}
 		else {
 			System.out.println(prendreParole()+"« Je n'ai pas trouvé tous les ingrédients, ma potion est\r\n"
-					+ "seulement de force »" +forcePotion);}
+					+ "seulement de force "+ forcePotion+ "»");}
 	}
 	
 	public void booster(Gaulois gaulois) {
