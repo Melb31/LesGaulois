@@ -33,7 +33,7 @@ public class Druide {
 
 
 
-	private void parler(String texte) {
+	public void parler(String texte) {
 		System.out.println(prendreParole()+ "« " + texte + "»");
 		
 	}
@@ -45,7 +45,6 @@ public class Druide {
 	
 	public void preparerPotion() {
 		Random random=new Random();
-		parler("Je vais aller préparer une petite potion...");
 		forcePotion= random.nextInt(effetPotionMax+1-effetPotionMin)+effetPotionMin;
 		if (forcePotion > 7) {
 			System.out.println(prendreParole()+"« J'ai préparé\r\n"
