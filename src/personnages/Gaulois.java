@@ -47,6 +47,24 @@ public class Gaulois {
 			this.trophees[nbTrophees] = lesTrophees[i];
 		}
 		}
+	
+	public void faireUneDonnation(Gaulois gaulois, Musee musee) {
+		if (nbTrophees > 0) {
+			System.out.println("Le gaulois"+getNom()+"<<Je donne au musee"
+					+ " tous mes trophees: ");
+			
+			for(int i=nbTrophees-1; nbTrophees>0; i--,nbTrophees--) {
+				
+				Trophee tropheeConvertit= new Trophee(gaulois, trophees[i]);
+				musee.donnerTrophees(gaulois, tropheeConvertit);
+				System.out.println("- "+ trophees[i].toString());
+			
+			
+		}}
+			else {
+				parler("Il n'y a aucun equipement que je puisse donner");
+			}
+	}
 
 	
 	
